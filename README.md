@@ -148,5 +148,5 @@ npm run create -- my-mcp-server
 
 ## Social preview
 
-如果你要把 repo 分享到社群（X/Discord/Slack），建議到 `assets/social-preview.svg` 取圖，並在 GitHub Settings → Social preview 上傳 PNG（1280×640）。
+請參考 `assets/README.md`（內含 `assets/social-preview.svg` 與上傳到 GitHub Social preview 的步驟）。
 
