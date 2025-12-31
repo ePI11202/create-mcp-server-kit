@@ -77,6 +77,21 @@ npm run build
 
 The generated project includes a ready-to-copy config snippet in its own `README.md`.
 
+> MCP docs/spec: see the official site at `https://modelcontextprotocol.io`
+
+### Minimal Claude Desktop config (Windows example)
+
+```json
+{
+  "mcpServers": {
+    "my-mcp-server": {
+      "command": "node",
+      "args": ["C:\\\\full\\\\path\\\\to\\\\my-mcp-server\\\\dist\\\\index.js"]
+    }
+  }
+}
+```
+
 ## Templates
 
 - **ts-stdio** (default): TypeScript MCP server using `@modelcontextprotocol/sdk` + `StdioServerTransport`.
@@ -130,4 +145,8 @@ npm run create -- my-mcp-server
 ## 中文（繁體）
 
 這個專案是一個 MCP 伺服器腳手架：讓你用一行指令生成「可以直接跑」的 TypeScript + stdio MCP server（非常適合 Claude Desktop 這類本機整合）。
+
+## Social preview
+
+如果你要把 repo 分享到社群（X/Discord/Slack），建議到 `assets/social-preview.svg` 取圖，並在 GitHub Settings → Social preview 上傳 PNG（1280×640）。
 

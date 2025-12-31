@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an idea
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Clear, narrow proposals get implemented fastest.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do?
+      placeholder: "I want a Streamable HTTP template so I can deploy an MCP server remotely."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should the project do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Any workarounds you tried?
+    validations:
+      required: false
+
+

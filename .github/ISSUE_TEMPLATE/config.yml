@@ -1,0 +1,7 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions / help
+    url: https://github.com/Epi-1120/create-mcp-server-kit/discussions
+    about: Please ask questions in Discussions (if enabled). If not enabled, open a normal issue.
+
+
