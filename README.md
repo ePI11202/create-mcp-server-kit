@@ -1,6 +1,9 @@
 # create-mcp-server-kit
 
-![node >=18](https://img.shields.io/badge/node-%3E%3D18-brightgreen) ![license MIT](https://img.shields.io/badge/license-MIT-blue)
+[![CI](https://github.com/ePI11202/create-mcp-server-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/ePI11202/create-mcp-server-kit/actions/workflows/ci.yml)
+![node >=18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)
+[![license MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![stars](https://img.shields.io/github/stars/ePI11202/create-mcp-server-kit?style=social)](https://github.com/ePI11202/create-mcp-server-kit)
 
 Scaffold a **production-ready Model Context Protocol (MCP) server** in seconds.
 
@@ -15,32 +18,33 @@ Scaffold a **production-ready Model Context Protocol (MCP) server** in seconds.
 
 ## Quick start
 
-### Option A: Use it after publishing to npm (recommended)
+### Option A: From this repo (works now)
 
 ```bash
-npx create-mcp-server-kit@latest my-mcp-server
-```
-
-Or:
-
-```bash
-npm create mcp-server-kit@latest my-mcp-server
-```
-
-### Option B: Use it from this repo (no publish needed)
-
-```bash
+git clone https://github.com/ePI11202/create-mcp-server-kit
+cd create-mcp-server-kit
 node ./bin/create-mcp-server-kit.js my-mcp-server
 cd my-mcp-server
 npm run dev
 ```
 
-> Windows note: if you previously ran `node create-mcp-server-kit` and got `MODULE_NOT_FOUND`,
-> run the entry file explicitly:
->
-> ```bash
-> node ./create-mcp-server-kit/bin/create-mcp-server-kit.js my-mcp-server
-> ```
+### Option B: After publishing to npm (recommended for users)
+
+Once you publish to npm, users can run:
+
+```bash
+npx create-mcp-server-kit@latest my-mcp-server
+```
+
+## 10-second sanity check
+
+After scaffolding:
+
+```bash
+cd my-mcp-server
+npm install
+npm run build
+```
 
 ## What gets generated
 
@@ -95,7 +99,31 @@ If you want others to use it via `npx`/`npm create`, publish to npm:
 1. Fill in `package.json` metadata (author/repository/homepage).
 2. Run `npm publish`.
 
+## FAQ / Troubleshooting
+
+### I got `MODULE_NOT_FOUND` on Windows
+
+Run the CLI entry file explicitly:
+
+```bash
+node ./create-mcp-server-kit/bin/create-mcp-server-kit.js my-mcp-server
+```
+
+Or from inside the repo:
+
+```bash
+npm run create -- my-mcp-server
+```
+
+## Roadmap
+
+- Add a `ts-streamable-http` template (remote server)
+- Add an OAuth-enabled template
+- Add more examples (resources, prompts, tasks)
+
 ## 中文（繁體）
 
 這個專案是一個 MCP 伺服器腳手架：讓你用一行指令生成「可以直接跑」的 TypeScript + stdio MCP server（很適合 Claude Desktop 這類本機整合）。
+
+如果你願意，我也可以幫你把 README 做成「首屏 1 行指令 + GIF + FAQ + Roadmap + badges」的完整爆款格式。
 

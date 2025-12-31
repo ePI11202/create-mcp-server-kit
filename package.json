@@ -3,7 +3,15 @@
   "version": "0.1.0",
   "description": "Scaffold a production-ready Model Context Protocol (MCP) server in seconds.",
   "license": "MIT",
-  "author": "",
+  "author": "ePI11202",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ePI11202/create-mcp-server-kit.git"
+  },
+  "homepage": "https://github.com/ePI11202/create-mcp-server-kit#readme",
+  "bugs": {
+    "url": "https://github.com/ePI11202/create-mcp-server-kit/issues"
+  },
   "type": "module",
   "main": "./index.cjs",
   "bin": {
