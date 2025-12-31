@@ -129,5 +129,5 @@ npm run create -- my-mcp-server
 
 ## 中文（繁體）
 
-這個專案是一個 MCP 伺服器腳手架：讓你用一行指令生成「可以直接跑」的 TypeScript + stdio MCP server（很適合 Claude Desktop 這類本機整合）。
+這個專案是一個 MCP 伺服器腳手架：讓你用一行指令生成「可以直接跑」的 TypeScript + stdio MCP server（非常適合 Claude Desktop 這類本機整合）。
 
